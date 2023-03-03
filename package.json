@@ -1,0 +1,46 @@
+{
+  "name": "vodocanal-rest-api",
+  "version": "1.2.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pkg .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon .",
+    "start": "node .",
+    "run-linux": "pm2 kill && pm2 startup && systemctl enable pm2-root && pm2 start cluster.json --restart-delay=3000 && pm2 save",
+    "run-win": "pm2 kill && pm2 start cluster.json --exp-backoff-restart-delay=100",
+    "prod-dev": "pm2-dev start .",
+    "pm-kill": "pm2 kill"
+  },
+  "bin": "./common/bin/bin.js",
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "targets": [
+      "latest-win-x64"
+    ],
+    "assets": [
+      "./node_modules/**/*"
+    ],
+    "outputPath": "./build"
+  },
+  "author": "MaxNomad",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "axios": "^0.27.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "express-validation": "^4.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "pm2": "^5.2.0",
+    "tabletojson": "^2.0.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}

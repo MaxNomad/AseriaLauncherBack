@@ -1,0 +1,58 @@
+MongoDB connection with retry
+app listening at port 3000
+MongoDB is connected
+MongoDB connection with retry
+app listening at port 3000
+MongoDB is connected
+MongoDB connection with retry
+app listening at port 3000
+MongoDB is connected
+MongoDB connection with retry
+app listening at port 3000
+MongoDB is connected
+MongoDB connection with retry
+app listening at port 3000
+MongoDB is connected
+app listening at port 8080
+Database connected, pool created
+GET /api/v1/menu?id=2 304 - - 18.289 ms
+GET /api/v1/menu?id=2 304 - - 6.147 ms
+[36m[apicache][0m adding cache entry for "/api/v1/station" @ 1 minutes [33m- 312ms[0m
+[36m[apicache][0m _apicache.headers: 
+[36m[apicache][0m res.getHeaders():  [Object: null prototype] {
+  'x-powered-by': 'Express',
+  'access-control-allow-origin': '*',
+  'access-control-allow-credentials': 'true',
+  'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  'access-control-expose-headers': 'Content-Length',
+  'access-control-allow-headers': 'Accept, Authorization, Content-Type, X-Requested-With, Range',
+  'content-type': 'application/json; charset=utf-8',
+  'content-length': '1483',
+  etag: 'W/"5cb-k9S4HVP5PtIbO1JnhKUcPZ1Lhkc"'
+}
+[36m[apicache][0m cacheObject:  {
+  status: 200,
+  headers: {
+    'x-powered-by': 'Express',
+    'access-control-allow-origin': '*',
+    'access-control-allow-credentials': 'true',
+    'access-control-allow-methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    'access-control-expose-headers': 'Content-Length',
+    'access-control-allow-headers': 'Accept, Authorization, Content-Type, X-Requested-With, Range',
+    'content-type': 'application/json; charset=utf-8',
+    'content-length': '1483',
+    etag: 'W/"5cb-k9S4HVP5PtIbO1JnhKUcPZ1Lhkc"'
+  },
+  data: <Buffer 7b 22 64 61 74 61 22 3a 7b 22 77 69 6e 64 44 69 72 65 63 74 69 6f 6e 22 3a 32 35 33 2c 22 66 6f 72 65 63 61 73 74 4f 76 65 72 76 69 65 77 22 3a 5b 7b ... 1433 more bytes>,
+  encoding: undefined,
+  timestamp: 1658144340.903
+}
+GET /api/v1/station 200 1483 - 322.764 ms
+GET /api/v1/categories 304 - - 15.654 ms
+GET /api/v1/post?id=305 304 - - 14.560 ms
+GET /api/v1/blog/category?page=1&category=1 304 - - 9.805 ms
+GET /api/v1/blog/category?page=1&category=5 304 - - 5.322 ms
+GET /api/v1/home/posts 304 - - 9.292 ms
+GET /api/v1/post?id=305 304 - - 5.649 ms
+GET /api/v1/post?id=305 304 - - 4.180 ms
+[36m[apicache][0m clearing expired entry for "/api/v1/station"
